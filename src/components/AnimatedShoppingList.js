@@ -44,7 +44,11 @@ export default class AnimatedShoppingList extends Component {
         console.log(shoppingItems);
         return (
             <div>
-                {shoppingItems}
+                <ReactCSSTransitionGroup transitionName="example"
+                                         transitionEnterTimeout={300}
+                                         transitionLeaveTimeout={300}>
+                    {shoppingItems}
+                </ReactCSSTransitionGroup>
                 <input type="text" value={this.state.newItems}
                     onKeyDown={this.handleChange.bind(this)}/>
             </div>

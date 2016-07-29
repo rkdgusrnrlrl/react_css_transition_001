@@ -18,6 +18,15 @@
         padding: 8px 12px;
         width: 120px;;
       }
+      .example-enter {
+        opacity: 0;
+        transform: translateX(-250px);
+      }
+      .example-enter.example-enter-active {
+        opacity: 1;
+        transform: translateX(0);
+        transition : 0.3s;
+      }
     </style>
   </head>
   <body>
