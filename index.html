@@ -18,6 +18,7 @@
         padding: 8px 12px;
         width: 120px;;
       }
+      /* item 등록 CSS 트렌젝션*/
       .example-enter {
         opacity: 0;
         transform: translateX(-250px);
@@ -27,7 +28,7 @@
         transform: translateX(0);
         transition : 0.3s;
       }
-
+      /* item 제거 CSS 트렌젝션*/
       .example-leave {
         opacity: 1;
         transform: translateX(0);
@@ -35,6 +36,16 @@
       .example-leave.example-leave-active {
         opacity: 0;
         transform: translateX(250px);
+        transition : 0.3s;
+      }
+      /* 초기 items 마운트시 CSS 트렌젝션*/
+      .example-appear {
+        opacity: 0;
+        transform: translateX(-250px);
+      }
+      .example-appear.example-appear-active {
+        opacity: 1;
+        transform: translateX(0);
         transition : 0.3s;
       }
     </style>
